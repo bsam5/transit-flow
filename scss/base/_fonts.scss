@@ -1,0 +1,20 @@
+$syne-font: 'Syne';
+$rubik-font: 'Rubik';
+$krub-font: 'Krub';
+$league-spartan_font: 'League Spartan';
+
+// Rubik
+@include font-face($rubik-font,'../fonts/Rubik/Rubik-Regular.ttf',400) ;
+@include font-face($rubik-font,'../fonts/Rubik/Rubik-Medium.ttf',500) ;
+@include font-face($rubik-font,'../fonts/Rubik/Rubik-SemiBold.ttf',600) ;
+@include font-face($rubik-font,'../fonts/Rubik/Rubik-Bold.ttf',700) ;
+
+// Krub
+@include font-face($krub-font,'../fonts/Krub/Krub-Medium.ttf',500) ;
+@include font-face($krub-font,'../fonts/Krub/Krub-SemiBold.ttf',600) ;
+
+// syne
+@include font-face($syne_font,'../fonts/syne/Syne-Bold.ttf',700) ;
+
+// League_Spartan
+@include font-face($league_spartan_font,'../fonts/League_Spartan/LeagueSpartan-Regular.ttf',400) ;

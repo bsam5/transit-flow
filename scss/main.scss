@@ -1,0 +1,11 @@
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+@import "base/mixin";
+@import 'base/fonts';
+@import 'base/color';
+@import "rules/global-rules";
+@import "layout/header";
+@import "layout/footer";
+@import "layout/slider";
+@import "modules/buttons";
+@import "modules/input";
+@import 'base/style';
