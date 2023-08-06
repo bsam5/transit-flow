@@ -62,20 +62,6 @@ function animateNumber(obj, start, end, signal, duration) {
     window.requestAnimationFrame(step);
 }
 
-let counting = document.querySelectorAll('.counting ')
-let flag = true;
-window.onscroll = function () {
-    counting.forEach((count) => {
-        if (flag && count.classList.contains('aos-animate')) {
-            document.querySelectorAll('.num').forEach(el => {
-                animateNumber(el, 0, parseInt(el.dataset.number, 10), '+', 3000)
-            })
-            flag = false;
-
-        }
-    })
-}
-
 // displayImageCount
 function displayImageCount(XlargeNumberScreens, largeNumberScreens, mobileNumberScreens, imagContainer, imagesSelect) {
     const XlargeScreenImageCount = XlargeNumberScreens;
@@ -182,4 +168,24 @@ form.onsubmit = function (e) {
     } else {
         e.preventDefault();
     }
+}
+
+// // Function to perform the change when the target div is shown
+
+window.addEventListener("scroll", reveal)
+let flag = true;
+
+function reveal() {
+    let reveals = document.querySelectorAll('.reveal');
+    reveals.forEach((reveal) => {
+        let revealTop = reveal.getBoundingClientRect().top,
+            windowHeight = window.innerHeight,
+            revealpoint = 150;
+        if (flag && revealTop < windowHeight - revealpoint) {
+            document.querySelectorAll('.reveal').forEach(el => {
+                animateNumber(el, 0, parseInt(el.dataset.number, 10), '+', 5000)
+            })
+            flag = false;
+        }
+    })
 }

@@ -252,10 +252,9 @@ header {
       padding-bottom: 10px;
 
       .nav-item {
-        &:after {
+        &:not(:last-child):after {
           display: none;
         }
-
         padding: 0;
       }
 
@@ -274,8 +273,7 @@ header {
         margin-top: 10px;
       }
     }
-  }
-  .nav-head {
+
     .content-header {
       max-width: 48%;
       left: 29%;
@@ -288,8 +286,6 @@ header {
       .primary-par {
         margin-block: 8px;
       }
-
-
     }
   }
 }
@@ -312,3 +308,5 @@ header {
     }
   }
 }
+
+
