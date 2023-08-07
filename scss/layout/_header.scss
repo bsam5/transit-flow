@@ -36,6 +36,26 @@ header {
     background: rgba(9, 18, 66, 0.25);
     padding: 0;
 
+    .navbar-icon {
+      display: inline-block;
+      width: 18px;
+      height: 2px;
+      background: $white;
+      border-radius: 6px;
+      transition: .3s;
+      &:nth-child(2) {
+        width: 12px;
+      }
+    }
+
+    .navbar-toggler:hover {
+
+
+      .navbar-icon {
+        width: 18px;
+      }
+    }
+
     .nav-item {
       padding-inline: 30px;
       position: relative;
@@ -255,6 +275,7 @@ header {
         &:not(:last-child):after {
           display: none;
         }
+
         padding: 0;
       }
 
@@ -268,7 +289,7 @@ header {
       }
 
       .request-btn {
-        padding: 12px 20px;
+        padding: 5px 15px;
         margin-left: 0;
         margin-top: 10px;
       }
